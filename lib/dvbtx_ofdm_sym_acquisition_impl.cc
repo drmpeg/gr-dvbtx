@@ -381,7 +381,7 @@ namespace gr {
             // Send sync_start downstream
             send_sync_start();
             d_initial_acquisition = 0;
-            printf("OFDM Symbol Acquistion Restarted!\n");
+            printf("OFDM Symbol Acquisition Restarted!\n");
 
             // Restart wit a half number so that we'll not end up with the same situation
             // This will prevent peak_detect to not detect anything
