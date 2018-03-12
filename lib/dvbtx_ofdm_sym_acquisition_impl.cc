@@ -104,8 +104,8 @@ namespace gr {
       int low, size;
 
       // Array to store peak positions
-      __GR_VLA(int, peak_pos, d_fft_length);
-      __GR_VLA(float, d_phi, d_fft_length);
+      int peak_pos[d_fft_length];
+      float d_phi[d_fft_length];
 
       // Calculate norm
       low = lookup_stop - (d_cp_length + d_fft_length - 1);
