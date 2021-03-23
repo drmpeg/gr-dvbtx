@@ -22,9 +22,10 @@ FIND_LIBRARY(
           /usr/local/lib64
           /usr/lib
           /usr/lib64
-)
+          )
+
+include("${CMAKE_CURRENT_LIST_DIR}/dvbtxTarget.cmake")
 
 INCLUDE(FindPackageHandleStandardArgs)
 FIND_PACKAGE_HANDLE_STANDARD_ARGS(DVBTX DEFAULT_MSG DVBTX_LIBRARIES DVBTX_INCLUDE_DIRS)
 MARK_AS_ADVANCED(DVBTX_LIBRARIES DVBTX_INCLUDE_DIRS)
-

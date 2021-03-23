@@ -22,13 +22,14 @@
 This is the GNU Radio DVBTX module. Place your Python package
 description here (python/__init__.py).
 '''
+from __future__ import unicode_literals
 
 # import swig generated symbols into the dvbtx namespace
 try:
-	# this might fail if the module is python-only
-	from dvbtx_swig import *
+    # this might fail if the module is python-only
+    from .dvbtx_swig import *
 except ImportError:
-	pass
+    pass
 
 # import any pure python here
 #
